@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    volumes:
+      - ./src:/app
+    environment:
+      - API_TOKEN=${API_TOKEN}
+    restart: unless-stopped

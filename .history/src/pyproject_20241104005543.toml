@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "youtube-telegram-bot"
+version = "0.1.0"
+description = "Telegram bot for downloading YouTube videos"
+authors = ["Abdullah Levin <abdullahlevin@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.0.0"
+yt-dlp = "^2024.09.01"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.0.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 
